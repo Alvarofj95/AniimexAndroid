@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.aforce.aniimex.databinding.ItemAnimeBinding
+import com.aforce.aniimex.extensions.imageUrl
 import com.aforce.aniimex.model.Anime
 import java.text.FieldPosition
 
@@ -23,11 +24,11 @@ class AnimeAdapter(private val onAnimeClicked: (Anime) -> Unit) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val anime = getItem(position)
         holder.binding.tvName.text = anime.name
-        holder.binding.tvName.text = anime.name
-        holder.binding.tvName.text = anime.name
-        holder.binding.tvName.text = anime.name
-        holder.binding.tvName.text = anime.name
-
+        holder.binding.tvDescription.text = anime.description
+        holder.binding.ivAnime.imageUrl(anime.url)
+        holder.binding.root.setOnClickListener{
+            onAnimeClicked(anime)
+        }
     }
 
     inner class ViewHolder(val binding: ItemAnimeBinding) :

@@ -7,6 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.aforce.aniimex.databinding.FragmentAnimeListBinding
+import com.aforce.aniimex.model.Anime
+import com.aforce.aniimex.network.AnimeApi
+import javax.security.auth.callback.Callback
 
 class AnimeListFragment : Fragment() {
 
@@ -22,6 +25,15 @@ class AnimeListFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_anime_list, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+    }
+
+    private fun requestData() {
+        AnimeApi.service.getAnimes().enqueue(object : Callback<List<Anime>>)
     }
 
     private fun onAnimeClick(id:String) {
