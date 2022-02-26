@@ -43,9 +43,4 @@
         android:name="com.aforce.aniimex.AnimeAddFragment"
         android:label="fragment_anime_add"
         tools:layout="@layout/fragment_anime_add" />
-    <fragment
-        android:id="@+id/imageListFragment"
-        android:name="com.aforce.aniimex.ImageListFragment"
-        android:label="fragment_image_list"
-        tools:layout="@layout/fragment_image_list" />
 </navigation>
