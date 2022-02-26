@@ -28,11 +28,14 @@ class AnimeListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        _binding = FragmentAnimeListBinding.inflate(inflater, container, false)
         return inflater.inflate(R.layout.fragment_anime_list, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        configUi()
+        requestData()
 
     }
 
@@ -58,6 +61,13 @@ class AnimeListFragment : Fragment() {
             }
 
         })
+    }
+
+    private fun configUi() {
+        binding.fabAddAnime.setOnClickListener{
+            val action = AnimeListFragmentDirections.actionAnimeListFragmentToAnimeAddFragment()
+            findNavController().navigate(action)
+        }
     }
 
     private fun onAnimeClick(id:String) {

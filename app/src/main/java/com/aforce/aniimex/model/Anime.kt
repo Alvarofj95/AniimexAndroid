@@ -13,7 +13,7 @@ data class Anime(
     @SerializedName("description")
     @Expose
     val description: String,
-    @SerializedName("came")
+    @SerializedName("name")
     @Expose
     val name: String,
     @SerializedName("seasons")
