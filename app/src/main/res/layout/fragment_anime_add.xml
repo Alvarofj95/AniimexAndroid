@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimeAddFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="128dp"
+        tools:layout_conversion_absoluteWidth="128dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="30dp"
+        tools:src="@tools:sample/avatars"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Name"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="331dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/etCategory"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Category"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etName"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="331dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etSeasons"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Seasons"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCategory"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="331dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Description"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSeasons"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="331dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Url"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etDescription"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="331dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        android:text="Confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUrl"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="102dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="20dp"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

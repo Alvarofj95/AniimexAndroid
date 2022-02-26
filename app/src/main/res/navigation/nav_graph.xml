@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/animeListFragment">
+
+    <fragment
+        android:id="@+id/animeListFragment"
+        android:name="com.aforce.aniimex.AnimeListFragment"
+        android:label="fragment_anime_list"
+        tools:layout="@layout/fragment_anime_list" >
+        <action
+            android:id="@+id/action_animeListFragment_to_animeDetailFragment"
+            app:destination="@id/animeDetailFragment" />
+        <action
+            android:id="@+id/action_animeListFragment_to_animeAddFragment"
+            app:destination="@id/animeAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animeDetailFragment"
+        android:name="com.aforce.aniimex.AnimeDetailFragment"
+        android:label="fragment_anime_detail"
+        tools:layout="@layout/fragment_anime_detail" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument
+            android:name="seasons"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/animeAddFragment"
+        android:name="com.aforce.aniimex.AnimeAddFragment"
+        android:label="fragment_anime_add"
+        tools:layout="@layout/fragment_anime_add" />
+    <fragment
+        android:id="@+id/imageListFragment"
+        android:name="com.aforce.aniimex.ImageListFragment"
+        android:label="fragment_image_list"
+        tools:layout="@layout/fragment_image_list" />
+</navigation>
