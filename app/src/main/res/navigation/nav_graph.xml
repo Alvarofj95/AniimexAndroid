@@ -23,19 +23,7 @@
         android:label="fragment_anime_detail"
         tools:layout="@layout/fragment_anime_detail" >
         <argument
-            android:name="name"
-            app:argType="string" />
-        <argument
-            android:name="category"
-            app:argType="string" />
-        <argument
-            android:name="seasons"
-            app:argType="string" />
-        <argument
-            android:name="description"
-            app:argType="string" />
-        <argument
-            android:name="url"
+            android:name="_id"
             app:argType="string" />
     </fragment>
     <fragment
