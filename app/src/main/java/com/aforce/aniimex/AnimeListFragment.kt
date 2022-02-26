@@ -21,7 +21,7 @@ class AnimeListFragment : Fragment() {
     private val binding
         get() = _binding!!
 
-    private val adapter = AnimeAdapter{onAnimeClick(it._id)}
+    private val adapter = AnimeAdapter{onAnimeClick(it.id)}
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

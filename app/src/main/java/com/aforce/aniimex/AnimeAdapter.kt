@@ -37,7 +37,7 @@ class AnimeAdapter(private val onAnimeClicked: (Anime) -> Unit) :
 
 class AnimeItemCallBack : DiffUtil.ItemCallback<Anime>() {
     override fun areItemsTheSame(oldItem: Anime, newItem: Anime): Boolean {
-        return oldItem._id == newItem._id
+        return oldItem.id == newItem.id
     }
 
     override fun areContentsTheSame(oldItem: Anime, newItem: Anime): Boolean {
