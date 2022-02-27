@@ -13,8 +13,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navController = findNavController(R.id.container)
-        binding.bottomNav.setupWithNavController(navController)
 
     }
 }

@@ -7,8 +7,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.aforce.aniimex.databinding.FragmentAnimeListBinding
 import com.aforce.aniimex.model.Anime
 import com.aforce.aniimex.network.AnimeApi
@@ -29,12 +31,16 @@ class AnimeListFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentAnimeListBinding.inflate(inflater, container, false)
-        return inflater.inflate(R.layout.fragment_anime_list, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         configUi()
+        binding.rvAnime.adapter = adapter
+        binding.rvAnime.layoutManager = LinearLayoutManager(context)
+
         requestData()
 
     }

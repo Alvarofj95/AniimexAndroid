@@ -13,6 +13,7 @@ import com.aforce.aniimex.databinding.FragmentAnimeDetailBinding
 import com.aforce.aniimex.extensions.imageUrl
 import com.aforce.aniimex.model.Anime
 import com.aforce.aniimex.network.AnimeApi
+import okhttp3.internal.notify
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

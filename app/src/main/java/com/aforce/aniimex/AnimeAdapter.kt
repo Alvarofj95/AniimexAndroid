@@ -24,7 +24,7 @@ class AnimeAdapter(private val onAnimeClicked: (Anime) -> Unit) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val anime = getItem(position)
         holder.binding.tvName.text = anime.name
-        holder.binding.tvDescription.text = anime.description
+        holder.binding.tvCategory.text = anime.category
         holder.binding.ivAnime.imageUrl(anime.url)
         holder.binding.root.setOnClickListener{
             onAnimeClicked(anime)
