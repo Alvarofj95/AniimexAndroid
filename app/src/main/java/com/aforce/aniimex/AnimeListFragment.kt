@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.aforce.aniimex.databinding.FragmentAnimeListBinding
 import com.aforce.aniimex.model.Anime
 import com.aforce.aniimex.network.AnimeApi
+import com.google.android.material.internal.ViewOverlayImpl
 import retrofit2.Response
 import javax.security.auth.callback.Callback
 
@@ -36,6 +37,9 @@ class AnimeListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.fabAddAnime.visibility = View.GONE
+
+        binding.progressBar.visibility = View.VISIBLE
 
         configUi()
         binding.rvAnime.adapter = adapter
@@ -52,6 +56,8 @@ class AnimeListFragment : Fragment() {
                 response: Response<List<Anime>>
             ) {
                 if (response.isSuccessful) {
+                    binding.progressBar.visibility = View.GONE
+                    binding.fabAddAnime.visibility = View.VISIBLE
                     adapter.submitList(response.body())
                 } else {
                     Toast.makeText(context, "Error en la respuesta", Toast.LENGTH_SHORT).show()
@@ -68,6 +74,7 @@ class AnimeListFragment : Fragment() {
 
         })
     }
+
 
     private fun configUi() {
         binding.fabAddAnime.setOnClickListener{
