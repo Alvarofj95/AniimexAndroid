@@ -1,22 +1,18 @@
-package com.aforce.aniimex
+package com.aforce.aniimex.ui
 
 import android.os.Bundle
-import android.telecom.Call
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.aforce.aniimex.databinding.FragmentAnimeListBinding
 import com.aforce.aniimex.model.Anime
 import com.aforce.aniimex.network.AnimeApi
-import com.google.android.material.internal.ViewOverlayImpl
 import retrofit2.Response
-import javax.security.auth.callback.Callback
 
 class AnimeListFragment : Fragment() {
 

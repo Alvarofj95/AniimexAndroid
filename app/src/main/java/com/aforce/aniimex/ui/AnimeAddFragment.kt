@@ -1,4 +1,4 @@
-package com.aforce.aniimex
+package com.aforce.aniimex.ui
 
 import android.os.Bundle
 import android.util.Log

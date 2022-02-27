@@ -1,4 +1,4 @@
-package com.aforce.aniimex
+package com.aforce.aniimex.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.aforce.aniimex.databinding.ItemAnimeBinding
 import com.aforce.aniimex.extensions.imageUrl
 import com.aforce.aniimex.model.Anime
-import java.text.FieldPosition
 
 
 class AnimeAdapter(private val onAnimeClicked: (Anime) -> Unit) :

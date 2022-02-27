@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/animeListFragment"
-        android:name="com.aforce.aniimex.AnimeListFragment"
+        android:name="com.aforce.aniimex.ui.AnimeListFragment"
         android:label="fragment_anime_list"
         tools:layout="@layout/fragment_anime_list" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/animeDetailFragment"
-        android:name="com.aforce.aniimex.AnimeDetailFragment"
+        android:name="com.aforce.aniimex.ui.AnimeDetailFragment"
         android:label="fragment_anime_detail"
         tools:layout="@layout/fragment_anime_detail" >
         <argument
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/animeAddFragment"
-        android:name="com.aforce.aniimex.AnimeAddFragment"
+        android:name="com.aforce.aniimex.ui.AnimeAddFragment"
         android:label="fragment_anime_add"
         tools:layout="@layout/fragment_anime_add" />
 </navigation>
