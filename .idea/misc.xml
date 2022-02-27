@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/alvar/Documents/Aniimex/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/alvar/Documents/Aniimex/app/src/main/res/font/roboto.xml" value="0.396875" />
+        <entry key="..\:/Users/alvar/Documents/Aniimex/app/src/main/res/font/roboto_thin.xml" value="0.396875" />
         <entry key="..\:/Users/alvar/Documents/Aniimex/app/src/main/res/layout/activity_main.xml" value="0.28351449275362317" />
         <entry key="..\:/Users/alvar/Documents/Aniimex/app/src/main/res/layout/fragment_anime_add.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/alvar/Documents/Aniimex/app/src/main/res/layout/fragment_anime_detail.xml" value="0.36666666666666664" />
