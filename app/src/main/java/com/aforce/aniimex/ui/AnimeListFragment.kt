@@ -86,5 +86,10 @@ class AnimeListFragment : Fragment() {
         findNavController().navigate(action)
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 
 }
+//TODO titulo addAnime. estilos pantallas. boton atras. modificar item lista.

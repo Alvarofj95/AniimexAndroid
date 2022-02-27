@@ -43,4 +43,5 @@ class AnimeItemCallBack : DiffUtil.ItemCallback<Anime>() {
         return oldItem.name == newItem.name
     }
 
+
 }

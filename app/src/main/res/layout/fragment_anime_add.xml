@@ -77,6 +77,8 @@
 
         android:hint="Description"
         android:minHeight="48dp"
+        android:maxHeight="140dp"
+        android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etSeasons"
@@ -117,5 +119,6 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="20dp"
         android:layout_marginTop="10dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
